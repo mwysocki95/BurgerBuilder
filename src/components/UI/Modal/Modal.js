@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./Modal.css";
-import Auxiliary from "../../../hoc/Auxiliary";
+import Auxiliary from "../../../hoc/Auxiliary/Auxiliary";
 import Backdrop from "../Backdrop/Backdrop";
 
 const modal = props => (
@@ -10,7 +10,7 @@ const modal = props => (
     <div
       className={classes.Modal}
       style={{
-        transform: props.show ? "translateY(0)" : "transalteY(-500vh)",
+        transform: props.show ? "translateY(0)" : "translateY(-500vh)",
         opacity: props.show ? "1" : "0"
       }}
     >
